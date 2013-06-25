@@ -8,6 +8,11 @@
   <param-name>contextConfigLocation</param-name>
   <param-value>WEB-INF/spring-application-context.xml </param-value>
  </context-param>
+ 
+  <listener>
+  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+ </listener>
+ 
  <context-param>
   <param-name>errorPageUrl</param-name>
   <param-value>/pages/systemError.do</param-value>
@@ -73,7 +78,5 @@
  <listener>
   <listener-class>org.apache.myfaces.webapp.StartupServletContextListener</listener-class>
  </listener>
- <listener>
-  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
- </listener>
+
 </web-app>
